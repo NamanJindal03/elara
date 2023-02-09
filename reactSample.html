@@ -1,0 +1,15 @@
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- defer async normal module -->
+    <script type="module">
+        const rootElement = document.getElementById('root');
+        const element = React.createElement('div', {
+            className: 'contianer',
+            children: 'Hello World'
+        })
+        const middleware = ReactDOM.createRoot(rootElement)
+        middleware.render(element)
+    </script>
+</body>
